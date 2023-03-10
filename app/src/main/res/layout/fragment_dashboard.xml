@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical" android:paddingTop="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/tareaEtiqueta"
+                android:hint="Que tarea está pendiente?"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:paddingStart="?attr/listPreferredItemPaddingStart"
+                android:paddingEnd="?attr/listPreferredItemPaddingEnd"
+                android:autofillHints="" android:importantForAutofill="no" android:height="48dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"/>
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="33dp" app:srcCompat="@drawable/ic_dashboard_black_24dp"
+                android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:tint="@color/purple_200"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="Buscar"
+                android:layout_width="0dp"
+                android:layout_height="0dp" android:id="@+id/botonFecha"
+                app:layout_constraintEnd_toEndOf="@+id/editTextDate" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Widget.AppCompat.Button"
+                app:layout_constraintStart_toStartOf="@+id/editTextDate"
+                android:background="#00FFFFFF"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical"
+                android:id="@+id/editTextDate" android:enabled="false" android:hint="Fecha limite"
+                android:paddingStart="?attr/listPreferredItemPaddingStart" android:minHeight="48dp"
+                android:paddingEnd="?attr/listPreferredItemPaddingEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:inputType="date" android:clickable="false"
+                app:layout_constraintStart_toEndOf="@+id/imageView3" app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_month"
+                android:id="@+id/imageView3"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:background="@null"
+                android:foregroundTint="@null" app:tint="@color/purple_200" android:tintMode="src_in"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" android:id="@+id/checkBoxNotificar"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="Notificar"
+                android:layout_width="0dp"
+                android:layout_height="48dp" android:id="@+id/textView3" android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/checkBoxNotificar"
+                android:paddingStart="?attr/listPreferredItemPaddingStart" android:textAlignment="gravity"
+                android:gravity="center_vertical" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingEnd="?attr/listPreferredItemPaddingEnd"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_popup_reminder"
+                android:id="@+id/imageView4" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/purple_200"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/descripcionEtiqueta"
+                android:hint="Descripción"
+                android:paddingStart="?attr/listPreferredItemPaddingStart"
+                android:paddingEnd="?attr/listPreferredItemPaddingEnd"
+                android:autofillHints="" android:importantForAutofill="no" android:minHeight="48dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView6" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_info_details"
+                android:id="@+id/imageView6" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:tint="@color/purple_200"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/textoCarpeta"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Carpeta" android:clickable="false" android:focusable="false"
+                android:paddingStart="?attr/listPreferredItemPaddingStart"
+                android:paddingEnd="?attr/listPreferredItemPaddingEnd"
+                app:layout_constraintEnd_toEndOf="@+id/botonNuevaCarpeta"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="0dp" android:id="@+id/botonCarpetas"
+                app:layout_constraintStart_toStartOf="@+id/textoCarpeta" android:background="#00000000"
+                android:backgroundTint="#00000000" app:layout_constraintTop_toTopOf="@+id/textoCarpeta"
+                app:layout_constraintBottom_toBottomOf="@+id/textoCarpeta"
+                app:layout_constraintEnd_toStartOf="@+id/botonNuevaCarpeta"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_add"
+                android:id="@+id/botonNuevaCarpeta" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:background="@null"
+                android:paddingEnd="?attr/listPreferredItemPaddingEnd" android:paddingBottom="0dp"
+                app:layout_constraintVertical_bias="0.0"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                android:id="@+id/imageView7" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:tint="@color/purple_200"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+            android:text="Agregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/botonAgregar"/>
+    <TextView
+            android:text="Recientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView4" android:textAlignment="center"
+            android:textSize="20sp"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/listaRecientes"
+            android:paddingBottom="?attr/actionBarSize"/>
+</LinearLayout>

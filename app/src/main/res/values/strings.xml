@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="title_home">Tareas</string>
+    <string name="title_dashboard">Agregar</string>
+    <string name="title_notifications">Borrar</string>
+    <string name="hint_agregar">¿Que tarea está pendiente?</string>
+    <string name="vacio"> </string>
+    <string name="canal_name">canaleta</string>
+    <string name="canal_description">una canaleta</string>
+</resources>
